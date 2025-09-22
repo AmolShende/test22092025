@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ing-ress
+spec:
+  ingressClassName: nginx
+  rules: 
+  - host: abcd.com       
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: mango
+            port:
+              number: 80
+
+

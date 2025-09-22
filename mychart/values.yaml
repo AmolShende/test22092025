@@ -1,0 +1,9 @@
+replica: 4
+containers:
+  name: con1
+  image: nginx
+  ports: 
+    containerPort: 80
+autoscaling:
+  enabled: true
+ 
