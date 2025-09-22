@@ -1,7 +1,7 @@
 replica: 4
 containers:
   name: con1
-  image: nginx
+  image: httpd
   ports: 
     containerPort: 80
 autoscaling:
